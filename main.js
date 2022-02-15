@@ -21,7 +21,7 @@ nocache('./Dhani.js', module => console.log(`${module} telah di update!`))
 const starts = async (Dhani = new WAConnection()) => {
     Dhani.logger.level = 'warn'
     Dhani.version = [2, 2142, 12]
-    Dhani.browserDescription = [ 'DhaniGans', 'Chrome', '3.0' ]
+    Dhani.browserDescription = [ 'SketchyBots', 'Chrome', '3.0' ]
     Dhani.on('qr', () => {
         console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code in only 20 seconds !!'))
     })
@@ -52,7 +52,7 @@ Dhani.on("group-participants-update", async (anu) => {
       try {
         pp_user = await Dhani.getProfilePicture(mem)
       } catch (e) {
-        pp_user = "https://telegra.ph/file/c9dfa715c26518201f478.jpg"
+        pp_user = "https://telegra.ph/file/97ad903ba5a233f75a751.jpg"
       }
       try {
         pp_group = await Dhani.getProfilePicture(anu.jid)
